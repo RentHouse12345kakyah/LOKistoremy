@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+   
+    
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="gambar/view.png" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div style="background-color: #20B2AA; padding: 10px;">
+  <h1>Welcome to LOKIstoremy</h1>
+  <p>Come and see our hot sales item.</p>
+</div>
+<html>
+  <head>
+    <style>
+      .watch {
+        font-size: 36px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #333;
+      }
+      .date {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: #999;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="watch">
+      <span id="hour"></span> : <span id="minute"></span> : <span id="second"></span>
+    </div>
+    <div class="date">
+      <span id="date"></span>, <span id="day"></span>
+    </div>
+    <script>
+      function updateClock() {
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        document.getElementById("hour").innerHTML = hour;
+        document.getElementById("minute").innerHTML = minute;
+        document.getElementById("second").innerHTML = second;
+        document.getElementById("date").innerHTML = now.toDateString();
+        document.getElementById("day").innerHTML = now.toLocaleString('default', { weekday: 'long' });
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+  </body>
+</html>
+
+</div>
+
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>LOKIstoremy TEAM</h2>
+<p>INTRODUCE OUR TEAM</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="gambar/sapik.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Syafiq Aiman</h3>
+  <p>Art Designer</p>
+</div>
+
+<div class="w3-quarter">
+   <img src="gambar/kimi.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>adibhakimi</h3>
+  <p>Assistant Art Designer</p>
+</div>
+
+<div class="w3-quarter">
+   <img src="gambar/zay.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Hazim Fahmi</h3>
+  <p>Manager</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="gambar/kori.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Bukhari</h3>
+  <p>Assistant Manager</p>
+</div>
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>what do we sell?</h2>
+<p>we sell high quality shirts, caps and shoes which follow the latest trends. Our product has its own fans who love retro and streetwear. Our products are made from imported materials that make them exclusive when worn. .</p>
+<ol>
+  <li>JERSEY UITM</li>
+  <li>BRANDED BILLS CAP</li>
+  <li>CONVERS SHOES</li>
+</ol>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="gambar/baju sapik.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>JERSEY UITM</h3>
+  <h4>RM69.00</h4>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="gambar/topi.png" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>BRANDED BILLS CAP</h3>
+  <h4>RM80.00</h4>
+  
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="gambar/kasut.png" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>CONVERS SHOES</h3>
+  <h4>RM149.90</h4>
+  
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<center>
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">OUR CONTACT</span></div>
+      <h3>Pt 815, Jalan Sri Cemerlang, Bandar Kota Bharu, 15300 Kota Bharu, Kelantan</h3>
+      <p>For any question just contact us .</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Kota Bharu, Kelantan</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +06 142919790</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  adibhakimiey@gmail.com</p>
+    </div>
+    </center>
+  </div>
+</div>
+<!--youtube-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/39gNHsK76eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <center>
+  <a href="https://instagram.com/lokiistoremy?igshid">
+  <img src="gambar/ig.png" alt="Social Media Image" height="60" width="60">
+</a>
+</center>
+  
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
